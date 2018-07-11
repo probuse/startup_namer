@@ -77,7 +77,34 @@ class RandomWordsState extends State<RandomWords> {
   }
 
   void _pushSaved(){
-    print('I think i was tapped')
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context){
+          final tiles = _saved.map(
+              (wordPair) {
+                return ListTile(
+                  title: Text(
+                    wordPair.asPascalCase,
+                    style: _biggerFont,
+                  ),
+                );
+              },
+          );
+
+          final divided = ListTile.divideTiles(
+            context: context,
+            tiles: tiles,).toList();
+
+          return Scaffold(
+            appBar: AppBar(
+              elevation: 4.0,
+              title: Text('Saved Suggestions'),
+            ),
+            body: ListView(children: divided,),
+          );
+        },
+      ),
+    );
   }
 
   @override
