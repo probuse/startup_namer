@@ -9,11 +9,15 @@ english_words: ^3.1.0
 
 # How to run the app.
 Clone the app either using Android studio or directly into your terminal.
+By running `https://github.com/probuse/startup_namer.git`
 Connect a physical device or an emulator.
-Type `flutter run` into your terminal and flutter will do the Magic to install it on your device or emulator.
+Type `flutter run` into your terminal and flutter will do the Magic to install it on your device or emulator.  
 
-# Here is how the app looks like an Android device.
+# Here is how the app looks like on Android device.
+## Main Screen
 ![App UI](https://raw.githubusercontent.com/probuse/startup_namer/master/images/Screenshot1.png)
+
+## Saved Suggestions Screen
 ![App UI](https://raw.githubusercontent.com/probuse/startup_namer/master/images/Screenshot2.png)
 
 
